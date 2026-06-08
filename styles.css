@@ -516,6 +516,8 @@ a.contact-value:hover { color: var(--accent); }
   padding: 1rem 2.5rem;
   cursor: pointer;
   transition: background var(--transition), transform var(--transition);
+
+   margin-top: 25px
 }
 .btn-send:hover {
   background: var(--accent-dim);

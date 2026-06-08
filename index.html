@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ItsLeo.iso — Photography</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── MOBILE HEADER ─────────────────────────────────────── -->
+  <header class="mobile-header">
+    <a class="logo" href="#" data-section="all">ItsLeo<span>.iso</span></a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ── SIDEBAR ────────────────────────────────────────────── -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+
+      <div class="sidebar-top">
+        <a class="logo" href="#" data-section="all">ItsLeo<span>.iso</span></a>
+        <p class="tagline">Photography & Vision</p>
+      </div>
+
+      <nav class="nav" id="mainNav">
+        <ul>
+          <li><a href="#" class="nav-link" data-section="about">About me</a></li>
+          <li><a href="#" class="nav-link" data-section="Architecture">Architecture</a></li>
+          <li><a href="#" class="nav-link" data-section="Landscape">Landscape</a></li>
+          <li><a href="#" class="nav-link" data-section="Portraits">Portraits</a></li>
+          <li><a href="#" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">Ig.</a>
+          <a href="#" aria-label="Behance">Be.</a>
+          <a href="#" aria-label="Vsco">Vs.</a>
+        </div>
+        <p class="copyright">© 2026 Leo</p>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- ── MAIN CONTENT ───────────────────────────────────────── -->
+  <main class="main-content" id="mainContent">
+
+    <!-- ABOUT SECTION -->
+    <section class="content-section" id="section-about" data-name="about">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-heading">About <em>me</em></h2>
+          <p class="about-lead">I photograph the world between breaths — the pause before movement, the shadow before light.</p>
+          <p>Based between Zurich and wherever the light leads, I work across architecture, landscape, and portraiture. My practice is rooted in stillness: finding the precise moment a space, face, or horizon reveals something true.</p>
+          <p>Shot on film and digital. Edited with restraint. Printed with intention.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">12+</span><span class="stat-label">Years shooting</span></div>
+            <div class="stat"><span class="stat-num">8</span><span class="stat-label">Countries</span></div>
+            <div class="stat"><span class="stat-num">Film</span><span class="stat-label">& Digital</span></div>
+          </div>
+        </div>
+        <div class="about-portrait">
+          <div class="portrait-placeholder">
+            <div class="portrait-inner">
+              <svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <rect width="200" height="280" fill="#E8E0D5"/>
+                <circle cx="100" cy="100" r="50" fill="#C8B8A4"/>
+                <ellipse cx="100" cy="230" rx="70" ry="55" fill="#C8B8A4"/>
+              </svg>
+            </div>
+            <p class="portrait-caption">Leo — Zurich, 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="content-section active" id="section-gallery" data-name="gallery">
+      <div class="gallery-header" id="galleryHeader">
+        <h2 class="gallery-category-title" id="galleryTitle">All Work</h2>
+        <span class="gallery-count" id="galleryCount"></span>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Injected by script.js -->
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="content-section" id="section-contact" data-name="contact">
+      <div class="contact-wrap">
+        <h2 class="section-heading">Get in <em>touch</em></h2>
+        <p class="contact-lead">Available for editorial, commercial, and personal projects.</p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a href="mailto:leo@itsleo.iso" class="contact-value">leo@itsleo.iso</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Instagram</span>
+            <a href="#" class="contact-value">@itsleo.iso</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Zurich, Switzerland</span>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="return false;">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" placeholder="your@email.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" rows="5" placeholder="Tell me about your project…"></textarea>
+          </div>
+          <button type="submit" class="btn-send">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">&#8592;</button>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next">&#8594;</button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="" id="lightboxImg" />
+    </div>
+    <div class="lightbox-meta">
+      <p class="lightbox-title" id="lightboxTitle"></p>
+      <p class="lightbox-intent" id="lightboxIntent"></p>
+    </div>
+  </div>
+  <div class="lightbox-overlay" id="lightboxOverlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
